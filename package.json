@@ -3,6 +3,10 @@
   "version": "1.1.1",
   "description": "Covers downloader",
   "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server",
+    "dev": "PORT=3567 nodemon ."
+  },
   "repository": "git@github.com:bogdanbryzh-official/covers-downloader.git",
   "author": "Bogdan Bryzh <bogdan.brizh@gmail.com>",
   "license": "MIT",
@@ -13,7 +17,8 @@
     "helmet": "^4.6.0",
     "nanoid": "^3.1.23"
   },
-  "engines": {
-    "node": "16"
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "nodemon": "^2.0.12"
   }
 }
